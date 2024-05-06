@@ -1,0 +1,11 @@
+{
+  "name": "yoga-fitness-app",
+  "version": "1.0.0",
+  "description": "Yoga Fitness App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Shaffer",
+  "license": "MIT"
+}
