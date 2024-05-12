@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { AppContext, useAppContext } from './AppContext/AppContext';
+
 
 function App() {
   return (
-    <div className="App">
+    <Provider>
+      <AppContext.Provider value={useAppContext()}>
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +23,10 @@ function App() {
         </a>
       </header>
     </div>
+        <App />
+      </AppContext.Provider>
+    </Provider>
+    
   );
 }
 
