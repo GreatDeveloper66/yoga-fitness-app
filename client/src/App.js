@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { AppContext, useAppContext } from './AppContext/AppContext';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './Containers/Home';
 
 
 function App() {
