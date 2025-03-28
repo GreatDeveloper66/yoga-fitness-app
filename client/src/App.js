@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { AppContext, useAppContext } from './AppContext/AppContext';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Containers/Home';
 
 
@@ -10,9 +10,8 @@ function App() {
     <div className="App">
       <AppContext.Provider value={useAppContext()}>
         <Router>
-          <Switch>
-            <Route path="/" component={Home} />
-          </Switch>
+          <Routes></Routes>
+          <Route path="/" exact component={Home} />
         </Router>
       </AppContext.Provider>
     </div>
